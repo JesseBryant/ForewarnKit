@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3CA1269720080E9200BE9EC5 /* ForewarnKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA1269520080E9200BE9EC5 /* ForewarnKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CA1269F2008103600BE9EC5 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1269E2008103600BE9EC5 /* Parameters.swift */; };
+		3CA126A12008186F00BE9EC5 /* Symbolizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA126A02008186F00BE9EC5 /* Symbolizer.swift */; };
+		3CA126A32008204100BE9EC5 /* Filterer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA126A22008204000BE9EC5 /* Filterer.swift */; };
+		3CA126A5200831A400BE9EC5 /* SimpleGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA126A4200831A400BE9EC5 /* SimpleGraph.swift */; };
+		3CA126A72008378600BE9EC5 /* PhaseSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA126A62008378600BE9EC5 /* PhaseSpace.swift */; };
+		3CE00CB9202D73380072E16E /* NodeDifferenceDirected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE00CB8202D73380072E16E /* NodeDifferenceDirected.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CA1269220080E9200BE9EC5 /* ForewarnKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForewarnKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1269520080E9200BE9EC5 /* ForewarnKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForewarnKit.h; sourceTree = "<group>"; };
 		3CA1269620080E9200BE9EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CA1269E2008103600BE9EC5 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		3CA126A02008186F00BE9EC5 /* Symbolizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbolizer.swift; sourceTree = "<group>"; };
+		3CA126A22008204000BE9EC5 /* Filterer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filterer.swift; sourceTree = "<group>"; };
+		3CA126A4200831A400BE9EC5 /* SimpleGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGraph.swift; sourceTree = "<group>"; };
+		3CA126A62008378600BE9EC5 /* PhaseSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseSpace.swift; sourceTree = "<group>"; };
+		3CE00CB8202D73380072E16E /* NodeDifferenceDirected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeDifferenceDirected.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +58,32 @@
 		3CA1269420080E9200BE9EC5 /* ForewarnKit */ = {
 			isa = PBXGroup;
 			children = (
+				3CE00CB7202D72FF0072E16E /* Dissimilarity */,
+				3CA1269D2008101F00BE9EC5 /* Data */,
 				3CA1269520080E9200BE9EC5 /* ForewarnKit.h */,
 				3CA1269620080E9200BE9EC5 /* Info.plist */,
 			);
 			path = ForewarnKit;
+			sourceTree = "<group>";
+		};
+		3CA1269D2008101F00BE9EC5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1269E2008103600BE9EC5 /* Parameters.swift */,
+				3CA126A02008186F00BE9EC5 /* Symbolizer.swift */,
+				3CA126A22008204000BE9EC5 /* Filterer.swift */,
+				3CA126A4200831A400BE9EC5 /* SimpleGraph.swift */,
+				3CA126A62008378600BE9EC5 /* PhaseSpace.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3CE00CB7202D72FF0072E16E /* Dissimilarity */ = {
+			isa = PBXGroup;
+			children = (
+				3CE00CB8202D73380072E16E /* NodeDifferenceDirected.swift */,
+			);
+			path = Dissimilarity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +129,7 @@
 				TargetAttributes = {
 					3CA1269120080E9200BE9EC5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA126A5200831A400BE9EC5 /* SimpleGraph.swift in Sources */,
+				3CA1269F2008103600BE9EC5 /* Parameters.swift in Sources */,
+				3CE00CB9202D73380072E16E /* NodeDifferenceDirected.swift in Sources */,
+				3CA126A12008186F00BE9EC5 /* Symbolizer.swift in Sources */,
+				3CA126A72008378600BE9EC5 /* PhaseSpace.swift in Sources */,
+				3CA126A32008204100BE9EC5 /* Filterer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +294,7 @@
 		3CA1269B20080E9200BE9EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "IOS-Directed-Study.ForewarnKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +316,7 @@
 		3CA1269C20080E9200BE9EC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
